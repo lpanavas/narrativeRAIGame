@@ -1,0 +1,40 @@
+{
+  "AI_Uses": [
+    {
+      "UseID": "USE001",
+      "Title": "Community Reputation System",
+      "RiskCategory": "Unacceptable",
+      "Description": "This system employs facial recognition to identify individuals and assign them a reputation score based on observed behavior. This can lead to privacy breaches and unwarranted stigmatization, as it could be used to label individuals based on isolated incidents or even inaccurately."
+    },
+    {
+      "UseID": "USE002",
+      "Title": "Public Safety Surveillance System",
+      "RiskCategory": "High",
+      "Description": "This system uses facial recognition to assist law enforcement in monitoring public spaces. While it may aid in maintaining public safety, it also poses a significant threat to privacy, potentially leading to constant surveillance and misuse of personal data."
+    },
+    {
+      "UseID": "USE003",
+      "Title": "Age Assurance System",
+      "RiskCategory": "High",
+      "Description": "This system leverages facial recognition to verify age for content access on online platforms. Despite its intended safety measures, it can mistakenly grant or deny access due to inaccurate age estimation, raising concerns about content appropriateness and discrimination."
+    },
+    {
+      "UseID": "USE004",
+      "Title": "Personal Photo Organizer",
+      "RiskCategory": "Low",
+      "Description": "This system employs facial recognition to aid users in organizing their personal photos. Although beneficial, it may lead to misidentification and incorrect photo categorization, potentially causing personal distress or confusion."
+    },
+    {
+      "UseID": "USE005",
+      "Title": "Smart Social Media Assistant",
+      "RiskCategory": "Low",
+      "Description": "This system uses facial recognition to suggest photo tags on social media. While it may enhance user experience, it may also suggest incorrect tags, leading to social awkwardness or potential misuse of personal images."
+    },
+    {
+      "UseID": "USE006",
+      "Title": "Smartphone Security Enhancer",
+      "RiskCategory": "Low",
+      "Description": "This system utilizes facial recognition for user authentication on smartphones. Although it provides a convenient security measure, it may fail to recognize the owner or mistakenly authenticate an unauthorized user, posing a risk to personal data security."
+    }
+  ]
+}

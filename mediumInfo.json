@@ -1,0 +1,40 @@
+{
+  "AI_Uses": [
+    {
+      "UseID": "USE001",
+      "Title": "Community Reputation System",
+      "RiskCategory": "Unacceptable",
+      "Description": "The system uses facial recognition to identify people and give them a score based on how they behave in public. However, it might label someone based on a single incident or mistake."
+    },
+    {
+      "UseID": "USE002",
+      "Title": "Public Safety Surveillance System",
+      "RiskCategory": "High",
+      "Description": "This system uses facial recognition to help police watch over public places. It might raise privacy concerns, as people might feel they are being watched all the time."
+    },
+    {
+      "UseID": "USE003",
+      "Title": "Age Assurance System",
+      "RiskCategory": "High",
+      "Description": "This system uses facial recognition to check if someone is old enough to access certain online content. There's a risk it could mistakenly allow or deny access based on inaccurate age estimation."
+    },
+    {
+      "UseID": "USE004",
+      "Title": "Personal Photo Organizer",
+      "RiskCategory": "Low",
+      "Description": "This system uses facial recognition to help sort out personal photos. It might sometimes misidentify people, leading to incorrect photo categorization."
+    },
+    {
+      "UseID": "USE005",
+      "Title": "Smart Social Media Assistant",
+      "RiskCategory": "Low",
+      "Description": "This system uses facial recognition to suggest who to tag in photos on social media. There's a chance it could suggest wrong tags, leading to awkward situations."
+    },
+    {
+      "UseID": "USE006",
+      "Title": "Smartphone Security Enhancer",
+      "RiskCategory": "Low",
+      "Description": "This system uses facial recognition so you can unlock your phone by looking at it. However, it might sometimes fail to recognize the owner or mistakenly unlock for someone else."
+    }
+  ]
+}

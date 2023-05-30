@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.game-stage {
+    padding: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003580;
+}
+
+#tech-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tech-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: move; /* indicates that the card can be moved */
+}
+
+.tech-card .tech-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tech-card .tech-description {
+    margin-bottom: 5px;
+}

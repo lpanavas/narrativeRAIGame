@@ -1,0 +1,40 @@
+{
+  "AI_Uses": [
+    {
+      "UseID": "USE001",
+      "Title": "Community Reputation System",
+      "RiskCategory": "Unacceptable",
+      "Description": "Our system leverages facial recognition to identify individuals and assign them a community reputation score based on their public behavior."
+    },
+    {
+      "UseID": "USE002",
+      "Title": "Public Safety Surveillance System",
+      "RiskCategory": "High",
+      "Description": "Our facial recognition system assists law enforcement agencies in maintaining public safety through vigilant surveillance of public spaces."
+    },
+    {
+      "UseID": "USE003",
+      "Title": "Age Assurance System",
+      "RiskCategory": "High",
+      "Description": "Our system uses facial recognition technology to ensure age-appropriate content accessibility on online platforms."
+    },
+    {
+      "UseID": "USE004",
+      "Title": "Personal Photo Organizer",
+      "RiskCategory": "Low",
+      "Description": "Our system uses facial recognition technology to help users easily organize their personal photo collections."
+    },
+    {
+      "UseID": "USE005",
+      "Title": "Smart Social Media Assistant",
+      "RiskCategory": "Low",
+      "Description": "Our system uses facial recognition to make photo tagging suggestions on social media, enhancing user experience."
+    },
+    {
+      "UseID": "USE006",
+      "Title": "Smartphone Security Enhancer",
+      "RiskCategory": "Low",
+      "Description": "Our system uses facial recognition for user authentication, offering a secure and convenient way to unlock smartphones."
+    }
+  ]
+}

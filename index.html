@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Risk Assessment Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- Game intro -->
+      <div id="intro" class="game-stage">
+        <h1>Welcome to the AI Risk Assessment Game</h1>
+        <p>
+            You are an EU tech regulator, tasked with the essential duty of categorizing AI technologies based on their potential risks. The risk levels to choose from are: 
+        </p>
+        <ul>
+            <li><b>Unacceptable:</b> Applications of AI that manipulate human behavior, exploit the vulnerabilities of a specific group, and other uses which could lead to physical or psychological harm. These uses are prohibited.</li>
+            <li><b>High:</b> AI applications which could cause significant risks, such as biometric identification, critical infrastructure, education, and employment. They require a risk management system before implementation.</li>
+            <li><b>Low:</b> AI applications posing minimal risk to individuals or society. They are largely unregulated.</li>
+        </ul>
+        <p>
+            In this game, each correct categorization earns you 2 points. Be careful though, mislabeling a high-risk application loses you 3 points, and if you mislabel an unacceptable application, you lose all your points. If unsure, you can choose not to label an application, which will still earn you 1 point. 
+        </p>
+        
+        <button id="start-game">Start Game</button>
+    </div>
+    
+      <!-- Game setup -->
+      <div id="setup" style="display: none">
+        <h1>Setup</h1>
+        <p>
+          As a newly appointed AI regulator for the European Union, you are
+          tasked with the crucial responsibility of determining the risk level
+          of various AI technologies in use today. This is no small task and
+          requires considerable knowledge and manpower.
+        </p>
+        <p>
+          However, resources are limited and you must strategically choose where
+          to allocate them. At the start of your mandate, you have been given 6
+          points that you can allocate to either expertise or manpower. Each of
+          these resources comes with its own advantages:
+        </p>
+        <ul>
+          <li>
+            <strong>Expertise Points:</strong> These points represent the depth
+            of your knowledge about AI technologies. The more points you have,
+            the more detailed information you will have access to when
+            evaluating a technology. To upgrade your expertise simply click the upgrade knowledge button. You can upgrade your knowledge twice per turn.
+          </li>
+          <li>
+            <strong>Manpower Points:</strong> These points represent the size of
+            your team. A larger team can review technologies faster, giving you
+            more time to make decisions.
+          </li>
+        </ul>
+        <p>
+          <ul>
+            <li>
+                <strong>Expertise Points:</strong> <input type="number" id="expertise-points" min="0" max="6" value="0">
+            </li>
+            <li>
+                <strong>Manpower Points:</strong> <input type="number" id="manpower-points" min="0" max="6" value="0">
+            </li>
+        </ul>
+          <button id="finish-setup">Finish Setup</button>
+        </p>
+      </div>
+
+      <!-- Game main -->
+      <!-- <div id="main" class="game-stage" style="display: none">
+        <h1>AI Technologies</h1>
+        <div id="tech-cards">
+          <div id="tech-card">
+            <h2 id="tech-title"></h2>
+            <p id="tech-description"></p>
+          </div>
+        </div>
+        <div id="buttons">
+          <button id="low-risk">Low Risk</button>
+          <button id="high-risk">High Risk</button>
+          <button id="unacceptable">Unacceptable</button>
+        </div>
+        <div id="controls">
+          <button id="upgrade-knowledge">Upgrade Knowledge</button>
+          <button id="skip-choice">Skip</button>
+        </div>
+        <div id="timer">Timer: <span id="timer-countdown"></span></div>
+        <p>Your score: <span id="score"></span></p>
+        <p>Expertise: <span id="expertise"></span></p>
+        <p>Manpower: <span id="manpower"></span></p>
+        <p>Feedback: <span id="feedback"></span></p>
+      </div> -->
+      <div id="main" class="game-stage" style="display: none">
+        <h1>AI Technologies</h1>
+        <div id="tech-cards">
+          <div id="tech-card">
+            <h2 id="tech-title"></h2>
+            <p id="tech-description"></p>
+          </div>
+        </div>
+        <div id="buttons">
+          <button id="low-risk">Low Risk</button>
+          <button id="high-risk">High Risk</button>
+          <button id="unacceptable">Unacceptable</button>
+        </div>
+        <div id="controls">
+          <button id="upgrade-knowledge">Upgrade Knowledge <span id="knowledge-upgrade-count">(0/2)</span></button>
+          <button id="skip-choice">Skip</button>
+        </div>
+        <div id="timer">Timer: <span id="timer-countdown"></span></div>
+        <p>Your score: <span id="score"></span></p>
+        <p>Expertise: <span id="expertise"></span></p>
+        <p>Feedback: <span id="feedback"></span></p>
+        <p>Progress: <progress id="progress-bar" value="0" max="20"></progress></p>
+    </div>
+
+      <!-- Game result -->
+      <div id="result" class="game-stage" style="display: none">
+        <h1>Game Result</h1>
+        <p>Your score: <span id="scoreResult"></span></p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
